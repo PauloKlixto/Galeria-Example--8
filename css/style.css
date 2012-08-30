@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Life+Savers);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+	font-family: 'Life Savers', cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	font-family: 'Life Savers', cursive;
+}
+a img {
+	border: none;
+}
+body {
+	background: #f1f1f1 url('http://img809.imageshack.us/img809/9176/stylebg.png') no-repeat fixed right bottom;
+}
+#container {
+	background: #FFF;
+	border-top: 5px solid #FF7100;
+	min-height: 800px;
+	position: relative;
+	z-index: 0;
+}
+header {
+	border-top: 3px solid #fff;
+	min-height: 120px;
+	/*position: relative;*/
+}
+.top-image {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+}
+.search input {
+	margin: 20px 0;
+	width: 330px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	height: 30px;
+	box-shadow: 1px 1px 10px -4px #000;
+	padding-left: 120px;
+	font-size: 20px;
+	color: #777;
+}
+.search button {
+	height: 35px;
+	box-shadow: 1px 1px 10px -4px #000;
+	border-radius: 5px;
+	margin: 0 10px;
+	font-size: 18px;
+	border: 1px solid #a64a00;
+	padding: 0 10px;
+	color: #fff;
+	font-family: 'Averia Libre';
+	background: #bf6f30;
+	cursor: pointer;
+}
+.search button:hover {
+	border: 1px solid #034769;
+	background: #235d79;
+}
+header h1 {
+	margin: 20px 0;
+	font-size: 30px;
+	color: #ff9540;
+	text-align: center;
+}
+hr.separador {
+	border: 0 none;
+	background: #CCC;
+	height: 1px;
+	margin: 0 5px 10px;
+}
+.images {
+	cursor: pointer;
+}
+.images p.tag {
+	background: #a64a00;
+	line-height: 2;
+	font-size: 13px;
+	padding-left: 10px;
+	color: #FFF;
+	margin: -28px 0 10px;
+	opacity: 0.8;
+	font-family: 'Averia Libre';
+}
+.images img:hover {
+	-webkit-animation: photoEffect 50s linear;
+	-moz-animation: photoEffect 50s linear;
+	animation: photoEffect 50s linear;
+}
+@-webkit-keyframes photoEffect
+	{
+		1% {-webkit-filter: contrast(5) hue-rotate(180deg);}
+		2% {-webkit-filter: contrast(10) hue-rotate(180deg);}
+	}
+@-moz-keyframes photoEffect
+	{
+		1% {opacity: 0.8;}
+	}
+@keyframes photoEffect
+	{
+		1% {opacity: 0.8;}
+	}
+footer p {
+	text-align: center;
+	line-height: 2.5;
+}
+
+@media screen and (max-width: 960px) and (min-width: 769px) {
+	.search input {
+		width: 250px;
+	}
+}
+@media screen and (max-width: 768px) and (min-width: 461px) {
+	.top-image {
+		display: none;
+	}
+	.search input {
+		width: 290px;
+		padding-left: 10px;
+	}
+	header h1 {
+		margin: 0 0 20px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.top-image {
+		display: none;
+	}
+	.search input {
+		width: 190px;
+		padding-left: 10px;
+	}
+	header h1 {
+		margin: 0 0 20px;
+	}
+}
